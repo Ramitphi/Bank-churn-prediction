@@ -2,18 +2,18 @@ import streamlit as st
 import pickle
 import numpy as np
 model  = pickle.load(open('clf.pkl','rb'))
-st.title('Bank Churn Predictio')
+st.title('Bank Churn Prediction')
 html_temp ="""
 <div style ="background-color:#025246 ;padding:10px">
 <h2 style="color:white;text-align:center;">Bank Churn Prediction ML App</h2>
 </div>
 """
 st.markdown(html_temp,unsafe_allow_html=True)
-Age =st.text_input("Age","Type Here")
-Tenure =st.text_input("Tenure","Type Here")
-Balance =st.text_input("Balance","Type Here")
-HasCrCard =st.text_input("HasCrCard","Type Here")
-EstimatedSalary =st.text_input("EstimatedSalary","Type Here")
+Age =st.text_input("Age")
+Tenure =st.text_input("Tenure",)
+Balance =st.text_input("Balance")
+HasCrCard =st.text_input("HasCrCard")
+EstimatedSalary =st.text_input("EstimatedSalary")
 
 safe_html = """
 <div style ="background-color:#F4D03F;padding:10px>
